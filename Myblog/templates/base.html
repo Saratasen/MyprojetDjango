@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>Accueil</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark shadow p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#"><i class="bi bi-house-door-fill"></i>ACCUEIL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">MES FRUITS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">GALERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="#">PANIER</a>
+          </li>
+          <li class="nav-item active ml-4">
+            <a class="nav-link btn btn-success text-white" href="#"><i class="bi bi-person-fill-up"></i>CONNECTEZ-VOUS</a>
+          </li>
+          <li class="nav-item active ml-5">
+            <a class="nav-link btn btn-info text-white" href="#"><i class="bi bi-person-plus-fill"></i>INSCRIVEZ-VOUS</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+  {% block content %}
+
+  {% endblock %}
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-dark shadow text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block text-white">
+        <span style="font-weight: bold;">Connectez-vous avec nous sur les réseaux sociaux:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com" class="me-4 text-reset ">
+          <i class="bi bi-facebook bg-white"></i>
+        </a>
+        <a href="https://www.twitter.com" class="me-4 text-reset">
+          <i class="bi bi-twitter bg-white"></i>
+        </a>
+        <a href="https://www.instagram.com" class="me-4 text-reset">
+          <i class="bi bi-instagram bg-white"></i>
+        </a>
+        <a href="https://www.youtube.com" class="me-4 text-reset">
+          <i class="bi bi-youtube bg-white"></i>
+        </a>
+        <a href="https://www.google.com" class="me-4 text-reset">
+          <i class="bi bi-google bg-white"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h3 class="text-uppercase fw-bold mb-4 text-white" style="background-color: gray;">
+              <i class="bi bi-shop"></i>RATASHA <i class="bi bi-shop"></i>FRUIT
+            </h3>
+
+            <div>
+
+              <a href=""><img class="img-logo" src="{% static 'images/monimage.jpeg' %}" alt="" ></a>
+            </div>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="font-weight: bold;">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4 text-white">
+              GALERY
+            </h4>
+
+            <p class="text-white">
+              <a href="" class="text-reset text-white">MES PRODUITS</a>
+            </p>
+            <p class="text-white">
+              <a href="" class="text-reset text-white">FRUITS SUCRER</a>
+            </p>
+            <p class="text-white">
+              <a href="" class="text-reset text-white">FRUITS DELICIEUX</a>
+            </p>
+            <p class="text-white">
+              <a href="" class="text-reset text-white">FRUITS VITAMINER</a>
+            </p>
+            <p class="text-white">
+              <a href="" class="text-reset text-white">FRUITS FRAIS</a>
+            </p>
+           
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="font-weight: bold;">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4 text-white">
+              LIENS UTILES
+            </h4>
+            <p class="text-white">
+              <a href="" class="text-reset "><i class="bi bi-truck"></i>sarata@fruit</a>
+            </p>
+            <p class="text-white">
+              <a href="" class="text-reset text-white"><i class="bi bi-credit-card-2-front-fill"></i>Saratafruitfrais
+                Sécurisé</a>
+            </p>
+            <p class="text-white">
+              <a href="" class="text-reset text-white"><i class="bi bi-box-seam"></i>fruitSenegal</a>
+            </p>
+            <p class="text-white">
+              <a href="" class="text-reset text-white"><i class="bi bi-bookmark-star-fill"></i>Charte du site</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="font-weight: bold;">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4 text-white">
+              Contact
+            </h4>
+            <p class="text-white"><i class="bi bi-house-fill "></i> SENEGAL , DAKAR Malika</p>
+            <p class="text-white">
+              <i class="bi bi-envelope-fill "></i>
+              saratainfoactu@gmail.com
+            </p>
+            <p class="text-white"><i class="bi bi-telephone-fill "></i> + 221 76 794 90 70</p>
+            <p class="text-white"><i class="bi bi-telephone-fill "></i> + 221 33 835 83 88</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold text-white" href=""> sarata actu fruits frais</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
